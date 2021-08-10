@@ -11,7 +11,7 @@ README = (HERE / "README.md").read_text()
 # This call to setup() does all the work
 setup(
     name="unlockGNN",
-    version="1.0.0",
+    version="2.0.0",
     description="Uncertainty quantification for graph neural network models of chemical systems",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -29,19 +29,11 @@ setup(
     install_requires=[
         "cloudpickle",
         "numpy",
-        "pandas",
-        "pyarrow",
         "pymatgen",
-        "matminer",
-        "matplotlib",
         "megnet",
-        "scipy",
-        "seaborn",
-        "smact",
         "tensorflow-probability",
     ],
     extras_require={
         "choice of tensorflow install": ["tensorflow"],
-        "progress bar": ["tqdm"],
     },
 )
